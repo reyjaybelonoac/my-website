@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rey Jay</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #fafafa;
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            margin: 0;
+            padding-top: 20px;
+        }
+
+        .profile-container {
+            background: #77b9d1;
+            width: 850px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            overflow: hidden;
+            position: relative;
+            padding-bottom: 20px;
+        }
+
+        /* Cover Photo */
+        .cover-photo {
+            width: 100%;
+            height: 250px;
+            position: relative;
+        }
+
+        .cover-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* Profile Picture */
+        .profile-pic-container {
+            position: absolute;
+            top: 200px; /* Adjusted for better placement */
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: white;
+            padding: 5px;
+            border-radius: 50%;
+        }
+
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid white;
+            object-fit: cover;
+        }
+
+        /* Profile Header - Adjusted for Better Name Placement */
+        .profile-header {
+            padding-top: 100px; /* Moved text down so it doesn't overlap profile pic */
+            text-align: center;
+        }
+
+        .username {
+            font-size: 24px;
+            margin-top: 60px; /* Added space below profile pic */
+            font-weight: bold;
+            color: #333;
+        }
+
+        .bio {
+            font-size: 14px;
+            color: #666;
+            margin: 10px 0;
+        }
+
+        .hobbies p {
+            margin: 5px 0;
+        }
+
+        /* Buttons */
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin: 15px 0;
+        }
+
+        .edit-btn, .share-btn {
+            background-color: #0095f6;
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 8px;
+            border: none;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        /* Post Grid */
+        .post-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 5px;
+            margin: 15px;
+        }
+
+        .post-grid img {
+            width: 100%;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="profile-container">
+        <!-- Cover Photo Section -->
+        <div class="cover-photo">
+            <img src="cover.jpg" alt="Cover Photo">  
+        </div>
+
+        <!-- Profile Picture Section -->
+        <div class="profile-pic-container">
+            <img src="2.jpg" alt="Profile Picture" class="profile-pic">
+        </div>
+
+        <!-- Profile Header - Now Lowered -->
+        <div class="profile-header">
+            <h1 class="username">Rey Jay Belono-ac</h1> <!-- Moved Down -->
+            <h4>Introduction</h4>
+            <p>Hello, Welcome to my Webpage! ❤️</p>
+
+            <h4>Bio</h4>
+            <p>I was born in Olingan, Dipolog City, Philippines, and have always been passionate about sports like basketball and volleyball. I have a strong desire for continuous learning and self-improvement, and I’m currently diving into web development and exploring various fields of technology.</p>
+
+            <h4>My Hobbies</h4>
+            <div class="hobbies">
+                <p>🏀 Basketball</p>
+                <p>🏐 Volleyball</p>
+                <p>🎸 Listening to Phonk Music</p>
+            </div>
+
+            <h4>🏠 Lives in <strong>Olingan, Dipolog City</strong></h4>
+            <h6>For more info, you can check out my:</h6>
+            <a href="https://www.facebook.com/reyjay.pagasian.9" target="_blank">
+                <img src="fb.jpg" alt="Facebook" width="20"> Facebook
+            </a>
+
+            <h4>Featured Photos</h4>
+        </div>
+
+        <!-- Featured Photos Grid -->
+        <div class="post-grid">
+            <img src="2.jpg" alt="Post 1">
+            <img src="3.jpg" alt="Post 2">
+            <img src="6.jpg" alt="Post 3">
+        </div>
+    </div>
+
+</body>
+</html>
